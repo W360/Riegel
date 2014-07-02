@@ -1,0 +1,656 @@
+Azul_Oscuro = #0a2a3f
+Azul_Marino = #0cadff
+Gris_Blanco = #f1faff
+Gris_Claro = #b9b9b9
+Gris = #5f5f5f
+Gris_Medio = #818181
+Gris_Oscuro = #232323
+Blanco = #fff
+plata = #f1f1f1
+
+@font-face {
+	font-family: "iconos";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.BorderNone
+	border 0px !important
+.txtAzul
+	color Azul_Marino
+.txtAzulO
+	color Azul_Oscuro
+.txtCen
+	text-align center
+.txtDer
+	text-align right
+.txtIzq
+	text-align left
+.txtJus
+	text-align justify
+.CincuentaP
+	width 49.5%
+.izq
+	float left
+.der
+	float right
+p
+	padding 0.5em 2em
+.BorIzq
+	border-left 1px solid Azul_Marino
+.Activo
+	border-bottom 2px solid Azul_Marino
+	a
+		color Azul_Marino !important
+.hiper
+	font-size 65px
+	font-weight 400
+	margin 0.2em 0em
+.clear
+	overflow hidden
+	clear both
+	
+hr
+	width 98%
+	margin 2em auto
+	border-top 1px solid Gris_Claro
+	opacity 0.3
+	border-bottom 0px
+
+h1
+	font-size 50px
+	font-weight 600
+	margin 1em 0em
+h2
+	font-size 40px
+h3
+	font-size 25px
+h4
+	font-size 16px
+	margin 0px
+	font-weight 700
+
+	
+
+body,html
+	font-family 'Open Sans', sans-serif
+	background Blanco
+	font-size 14px
+	color Gris
+	.slicknav_menu
+		display none !important
+	header
+		width 100%
+		height 215px
+		margin 0 auto
+		border-bottom 2px solid Azul_Marino
+		position relative
+		
+		#ConteHeader
+			width 1024px
+			height 100%
+			margin 0 auto
+			position relative
+			#Logo
+				width 256px
+				height 256px
+				position absolute
+				left 0px
+				top 1.8em
+				z-index 9999
+				img
+					width 100%
+					height 100%
+			#ConteBuscar
+				width 450px
+				float right
+				overflow hidden
+				display block
+				margin 4em 0em 3em 0em
+				position relative
+				#NombreLogo
+					widht auto
+					float left
+					h3
+						color Azul_Oscuro
+						font-size 24px
+						float left
+						padding 0px
+						margin 0px
+						position absolute
+						bottom 0px
+						left 0px
+					span
+						font-size 12px
+						color Azul_Marino
+						font-weight 700
+						float left
+						position absolute
+						bottom 3px
+						left 77px
+				#Buscar
+					width auto
+					float right
+					.icoBuscar
+						width 32px
+						height 32px
+						float left
+						&:before
+							font-family "iconos"
+							content "\e000"
+							font-size 27px
+							color Azul_Marino
+					form
+						width auto
+						float left
+						input[type="text"]
+							width auto
+							border-radius 15px
+							border 1px solid Gris_Claro
+							padding 0.3em 0.5em
+							box-shadow inset 0px 0px 5px Gris_Claro
+							color Gris_Medio
+			nav
+				float right
+				width auto
+				display block
+				overflow hidden
+				padding 1em 0em
+				ul
+					width auto
+					float right
+					li
+						display inline-block
+						font-size 16px
+						font-weight 600
+						&:hover
+							border-bottom 2px solid Azul_Marino
+
+						
+						a
+							color Gris
+							text-decoration none
+							padding 0.2em 0.7em
+							border-left 1px solid Gris_Claro
+							&:hover
+								color Azul_Marino
+
+	section
+		border-top 2em solid Azul_Oscuro
+		position relative
+
+		&:before
+			display block
+			content ""
+			border-top 3em solid Azul_Marino
+			height 100%
+			width 100%
+			box-sizing border-box
+			z-index 1
+
+		#ConteClientes
+			width auto
+			height auto
+			background url(../img/bg.jpg) repeat
+			box-shadow 0px 0px 15px 0px rgba(50, 50, 50, 0.4)
+			#ConteBoxSlider
+				width 1024px
+				margin 0 auto
+				padding 4em 0em
+				.Cliente
+					padding 0em 1.3em
+
+		.Aliados
+			width auto
+			display block
+			padding 1em 0em
+			background plata
+			box-shadow 0px 4px 6px Gris_Claro
+			.ConteAliados
+				width 1024px
+				margin 0 auto
+				overflow hidden
+				span
+					width 195px
+					display block
+					font-size 17px
+					color Azul_Oscuro
+					border-right 1px solid Azul_Marino
+					float left
+					text-align center
+				img
+					float left
+					padding 0em 1em 0em 1.5em
+		#ConteSection
+			width 1024px
+			margin 0 auto
+			overflow hidden
+			ul
+				width auto
+				li
+					list-style none
+					position relative
+					margin 1em 0em
+					&:before
+						position absolute
+						left -12px
+						top -3px
+						content "•"
+						color Azul_Marino
+						font-size 18px
+						font-weight 800
+			form
+				width auto
+				input[type="text"],textarea
+					width 95%
+					padding 0.8em 0.5em
+					border 1px solid silver
+					margin-bottom 2em
+					border-radius 8px
+				
+				input[type="submit"]
+					background Azul_Oscuro
+					padding 0.5em 1em
+					font-weight 600
+					border none
+					color Blanco
+					&:hover
+						background Azul_Marino
+
+
+			.ConteBox
+				margin 2em 0em
+				overflow hidden		
+				.BoxHome
+					width 30%
+					box-shadow 0px 0px 13px 2px rgba(50, 50, 50, 0.68)
+					h1
+						text-align center
+						font-weight 800
+						margin 0em
+					p
+						padding 1em 1.5em
+						margin 0em
+						color Blanco
+						font-weight 500
+						font-size 18px
+						text-align center
+					img
+						width 100%		
+
+				.BoxIzq
+					float left
+					background Azul_Oscuro
+					h1
+						color Azul_Marino
+				.BoxCen
+					float left
+					background Azul_Marino
+					margin 0em 5%
+					h1
+						color Azul_Oscuro
+				.BoxDer
+					float right
+					background Azul_Oscuro
+					h1
+						color Azul_Marino
+
+			.jcarousel
+				position relative
+				overflow hidden
+				ul
+					width 20000em
+					position relative
+					list-style none
+					margin 0px
+					padding 0px
+					li
+						float left
+						list-style none
+						&:before
+							content ""
+		#FooterHome
+			width 100%
+			background Azul_Oscuro
+			margin-top 2em
+			padding 3em 0em
+			overflow hidden
+			border-top 2px solid Azul_Marino
+			#Conte
+				width 1024px
+				margin 0 auto
+				overflow hidden
+				#Superior
+					overflow hidden
+					h2
+						margin 0em
+						padding 0em
+						span
+							font-size 14px
+							font-weight 400
+					p
+						text-align center
+						color Blanco
+						padding 0em
+						margin 0em
+						font-size 12px
+						font-weight 200
+					.box
+						width 40%
+						padding 0em 4.5%
+						float left
+						a
+							text-align center
+							color Azul_Marino
+							text-decoration none
+							border 1px solid Azul_Marino
+							background Azul_Oscuro
+							margin 1em auto
+							display block
+							width 60px
+							font-size 12px
+
+
+					.Border
+						border-left 1px solid Blanco
+					#Trabajamos
+						overflow hidden
+						#imagen
+							float left
+							display inline-block
+							width 40%
+						#Texto
+							float left
+							display inline-block
+							width 54%
+							padding 0em 3%
+							.Titulo
+								font-size 20px
+								color Azul_Marino
+							p
+								text-align justify
+								padding-top 2em
+				#Inferior
+					width auto
+					overflow hidden
+					.ConteAliados
+						width 1024px
+						margin 0 auto
+						overflow hidden
+						span
+							width 195px
+							display block
+							font-size 17px
+							color Blanco
+							border-right 1px solid Azul_Marino
+							float left
+							text-align center
+						img
+							float left
+							padding 0em 1em 0em 1.5em
+
+
+	
+
+	footer
+		width 100%
+		background Gris_Oscuro
+		position relative
+		border-top 1px solid Gris_Medio
+		#ConteFooter
+			width 1024px
+			margin 0 auto
+			padding 3em 0em
+			overflow hidden
+			.Box
+				width 30%
+				float left
+				padding 0em 1.5%
+				#LogoFooter
+					width 180px
+					height 59px
+					img
+						width 100%
+						height auto
+				span
+					display block
+					color Blanco
+				ul
+					width auto
+					text-align center
+					padding 2em 0em
+					li
+						list-style none
+						display inline-block
+						a
+							text-decoration none
+							color Blanco
+							.fa
+								padding 0em 2em
+								&:before
+									font-family "iconos"
+									content "\e002"
+									font-size 38px
+									color Blanco
+							.tw
+								padding 0em 2em
+								&:before
+									font-family "iconos"
+									content "\e004"
+									font-size 38px
+									color Blanco
+		#Up
+			position absolute
+			font-size 25px
+			right 20px
+			bottom 20px
+			a
+				color Blanco
+				text-align center
+				background Azul_Marino
+				width 45px
+				height 45px
+				display block
+				text-decoration none
+				&:before
+					font-family "iconos"
+					content "\e003"
+					font-size 40px
+					color Blanco
+
+@media screen and (max-width: 1022px)
+	.caption
+		left 7% !important
+		top 20% !important
+	.hiper
+		font-size 45px
+	.bx-next
+		right 0px !important
+	.bx-prev
+		left 0px !important
+
+	body
+		width 100%
+		header
+			width 100%
+			#ConteHeader
+				width auto
+				height 100%
+				margin 0px
+				position relative
+				#Logo
+					width 180px
+					height 180px
+				
+				nav
+					width auto
+					ul
+						width auto
+						float right
+						li
+							font-size 14px
+		section
+			width auto
+
+			#ConteClientes
+				width auto
+				overflow hidden
+				#ConteBoxSlider
+					width auto
+					overflow hidden
+					.Cliente
+						padding 0em 1.3em
+
+			.Aliados
+				width auto
+				display none
+			#ConteSection
+				width auto
+				padding 0em 1em
+
+
+			#FooterHome
+				width auto
+				padding 3em 1em
+				#Conte
+					width auto !important
+					#Superior
+						overflow hidden
+						.CincuentaP
+							width 100%
+							padding-bottom 2em
+						h2
+							margin 0em
+							padding 0em
+							span
+								font-size 14px
+								font-weight 400
+						p
+							text-align center
+							color Blanco
+							padding 0em
+							margin 0em
+							font-size 12px
+							font-weight 200
+						.box
+							width 40%
+							padding 0em 4.5%
+							float left
+							a
+								text-align center
+								color Azul_Marino
+								text-decoration none
+								border 1px solid Azul_Marino
+								background Azul_Oscuro
+								margin 1em auto
+								display block
+								width 60px
+								font-size 12px
+
+
+						.Border
+							border-left 1px solid Blanco
+						#Trabajamos
+							overflow hidden
+							margin 0 10%
+							width 80%
+							#imagen
+								float left
+								display inline-block
+								width 30%
+								img
+									width 100%
+					#Inferior
+						display none
+
+		footer
+			width auto
+			#ConteFooter
+				width auto
+
+@media screen and (max-width: 740px)
+	.hiper
+		font-size 22px
+		line-height 1.5em
+	body
+		width auto
+		.slicknav_menu
+			display block !important
+		header
+			width auto
+			height auto
+			#ConteHeader
+				width 100%
+				position relative
+				#menu
+					display none
+				#ConteBuscar
+					display none
+				#Logo
+					position absolute
+					top -10px
+					left 20px 
+					width 120px
+					height 120px
+		section
+			width auto
+			#ConteSection
+				width auto
+				#Seguimiento
+					width auto
+					img
+						width 100%
+						display block
+				form
+					width auto
+					.CincuentaP
+						width 100%
+						float none
+				.ConteBox
+					width auto
+					.CincuentaP
+						width 100%
+						float none
+					.BorIzq
+						border-top 1px solid Azul_Marino
+						border-left 0px
+					.BoxHome
+						float none
+						width 95%
+						margin 3em auto
+			#FooterHome
+				width auto
+				#Conte
+					width auto
+					#Superior
+						width auto
+						#Trabajamos
+							width auto
+							text-align center
+							#imagen
+								width 100%
+								display block
+								img
+									margin 0 auto
+									width auto
+							#Texto
+								margin 0 auto
+								display block
+								width auto
+		#slider4
+			display none
+		footer
+			width auto
+			#ConteFooter
+				width auto
+				.Box
+					float none
+					width auto
+					text-align center
+					#LogoFooter
+						margin 0 auto
